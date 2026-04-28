@@ -64,6 +64,53 @@ http://localhost:8080/swagger-ui/index.html
 | PATCH | /api/v1/task/{id}/complete | Marcar tarefa como concluída |
 | DELETE | /api/v1/task/{id} | Deletar tarefa |
 
+### Criar tarefa
+```json
+POST /api/v1/task
+{
+  "title": "Estudar Spring Boot",
+  "description": "Ver aula sobre testes unitários",
+  "status": false
+}
+```
+
+### Resposta de sucesso
+```json
+{
+  "data": {
+    "id": 1,
+    "title": "Estudar Spring Boot",
+    "description": "Ver aula sobre testes unitários",
+    "status": false,
+    "createdAt": "2026-04-27T19:41:08",
+    "updatedAt": "2026-04-27T19:41:08"
+  },
+  "message": "Tarefa criada com sucesso",
+  "error": null,
+  "status": 201
+}
+```
+
+### Atualizar tarefa
+```json
+PUT /api/v1/task/1
+{
+  "title": "Estudar Spring Boot",
+  "description": "Ver aula sobre testes unitários",
+  "status": true
+}
+```
+
+### Resposta de erro — tarefa não encontrada
+```json
+{
+  "data": null,
+  "message": null,
+  "error": "Task com ID 99 não encontrada",
+  "status": 404
+}
+```
+
 ## 🧪 Testes
 
 ```bash
