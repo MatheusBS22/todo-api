@@ -22,7 +22,7 @@ API REST para gerenciamento de tarefas construída com Spring-Boot 4.
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/mbsousa/ToDoApp_FirstProject.git
+git clone https://github.com/MatheusBS22/todo-api
 cd ToDoApp_FirstProject
 ```
 
