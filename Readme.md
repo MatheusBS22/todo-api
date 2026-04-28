@@ -64,6 +64,7 @@ http://localhost:8080/swagger-ui/index.html
 | PATCH | /api/v1/task/{id}/complete | Marcar tarefa como concluída |
 | DELETE | /api/v1/task/{id} | Deletar tarefa |
 
+## 📝 Exemplos de uso
 ### Criar tarefa
 ```json
 POST /api/v1/task
